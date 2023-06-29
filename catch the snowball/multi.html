@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch a Snowball</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+     body{
+        background-image: url(background.png);
+        display: flex;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    /* Efek hover pada tombol kembali */
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+</style>
+<body>   
+    <div id="can">
+        <canvas id="myGame" width="400" height="600" ></canvas>
+    </div>
+
+
+    <div id="result">
+        <h1 id="win">Game over</h1>
+        <button id="btn" onclick="location.reload()">Restart</button>
+    </div>
+ 
+    <div class="buttons" id="buttons">
+        <button id="left-com"><img src="snowman.png" alt=""></button>
+        <button id="right-com"><img src="snowman2.png" alt=""></button>
+        <button id="left-user"><img src="snowman.png" alt=""></button>
+        <button id="right-user"><img src="snowman2.png" alt=""></button>
+
+    </div>
+    <script src="js2player.js"></script>
+    <audio hidden autoplay loop>
+      <source src="inGame.wav" type="audio/mpeg">
+      Browsermu tidak mendukung tag audio
+    </audio>
+
+
+
+</body>
+</html>

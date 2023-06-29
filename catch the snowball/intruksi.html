@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruction - Catch a Snowball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body{
+        background-image: url(background.png);
+        color: white;
+        font-family: monospace;
+        text-align: center;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #003771;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    /* Efek hover pada tombol kembali */
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
+    h1 {
+      color: #003771;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center; 
+    }
+
+</style>
+<body>
+<div >
+    <h1 >
+        GAME INSTRUCTION
+    </h1>
+<h3 style="margin: 100px; text-align: left; margin-left: 150px;">
+    1. Perhatikan bola salju yang terlempar </br>
+    2. Untuk menangkap bola salju geser menggunakan keyboard panah kanan untuk geser ke kanan dan panah kiri untuk geser ke kanan (Player1) </br>
+    3. Untuk menangkap bola salju geser menggunakan keyboard huruf a untuk geser ke kiri dan panah huruf d untuk geser ke kanan (Player2) </br>
+    4. Lawan akan mendapatkan skor jika bola salju tidak tertangkap 
+</h3>
+</div>
+<button class="back-button" onclick="goBack()">Kembali</button>
+
+<audio hidden autoplay loop>
+    <source src="gameIntro.wav" type="audio/mpeg">
+    Browsermu tidak mendukung tag audio
+  </audio>
+<script>
+// Fungsi JavaScript yang dipanggil saat tombol diklik
+function goBack() {
+  // Menggunakan window.history untuk kembali ke halaman sebelumnya
+  window.history.back();
+}
+</script>
+
+</body>
+</html>

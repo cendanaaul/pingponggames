@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch a Snowball</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<style>
+    body{
+        background-image: url(background.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+</style>
+<body>
+    <div id="can">
+        <canvas id="myGame" width="400" height="600" ></canvas>
+    </div>
+
+
+    <div id="result">
+        <h1 id="win">Game over</h1>
+        <button id="btn" onclick="location.reload()">Restart</button>
+    </div>
+    <audio hidden autoplay loop>
+        <source src="inGame.wav" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio
+      </audio>
+
+    <script src="js1player.js"></script>
+</body>
+</html>
